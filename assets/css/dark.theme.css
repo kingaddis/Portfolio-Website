@@ -252,7 +252,7 @@ a.hoveroff:hover {
 }
 
 /* Show on hover - simple fade in */
-.portfolio-item:hover .tube-light-effect {
+.portfolio-item .tube-light-effect {
   opacity: 1;
 }
 
@@ -790,14 +790,6 @@ section {
   100% { transform: rotateX(0deg) rotateY(0deg) translateY(0px) scale(1.02); }
 }
 
-/* .slideshow-container {
-  max-width: 50%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; 
-} */
 
 /* Set slideshow height to 50vh on small screens */
 @media (max-width: 768px) {
@@ -818,3 +810,15 @@ section {
     text-align: center;
   }
 } 
+
+/* Add to your existing CSS */
+.interactive-tilt-container {
+  transition: transform 0.5s ease-out;
+}
+
+.interactive-tilt-container:hover {
+  transform: 
+    translateX(-8px) /* Move left */
+    rotateZ(-2deg); /* Slight counter-clockwise tilt */
+}
+
